@@ -1,0 +1,10 @@
+{
+  "simulation": "ods.vm.gatling.test",
+  "simulationId": "test",
+  "start": 1554240825171,
+  "description": "",
+  "scenarios": ["View All products"],
+  "assertions": [
+
+  ]
+}

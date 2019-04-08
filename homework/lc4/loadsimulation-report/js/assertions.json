@@ -1,7 +1,7 @@
 {
-  "simulation": "ods.vm.gatling.LoadSimulation",
-  "simulationId": "loadsimulation",
-  "start": 1554657486724,
+  "simulation": "ods.vm.gatling.LoadSimulation_run",
+  "simulationId": "loadsimulation-run",
+  "start": 1554757454017,
   "description": "",
   "scenarios": ["Users: HP -> all product -> product details -> add to cart -> product details", "Users: HP -> all product -> product details -> add to cart -> product details -> view cart -> checkout", "Users: HP -> all product -> product details -> all product -> product details", "Users: HP -> all product -> product details -> add to cart -> view cart -> checkout", "Users: HP -> all product -> product details", "Users: HP -> all product -> product details -> view cart", "Users: HP -> all product -> product details -> add to cart", "Users: HP -> all product -> product details -> view cart -> product details"],
   "assertions": [

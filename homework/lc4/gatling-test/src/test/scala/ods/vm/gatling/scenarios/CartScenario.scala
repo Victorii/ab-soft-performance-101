@@ -16,7 +16,6 @@ object CartScenario {
     * Add Product to cart
     * */
   val addProductToCart: ScenarioBuilder = scenario("Add Product to cart")
-    .exec(ProductScenario.viewProductDetails)
     .exec(addCookie(Cookie("token", "${token}").withDomain(BaseUrl.domain)))
     .exec(GenerateToken.checkToken)
     .exec(ActionsProduct.addProductToCart)
@@ -26,7 +25,6 @@ object CartScenario {
     * View Cart
     * */
   val viewCart: ScenarioBuilder = scenario("View Cart")
-    .exec(addProductToCart)
     .exec(addCookie(Cookie("token", "${token}").withDomain(BaseUrl.domain)))
     .exec(GenerateToken.checkToken)
     .exec(ActionsCart.getProductFromCart)
@@ -35,7 +33,6 @@ object CartScenario {
     * Checkout
     * */
   val checkout: ScenarioBuilder  = scenario("Checkout")
-    .exec(viewCart)
     .exec(addCookie(Cookie("token", "${token}").withDomain(BaseUrl.domain)))
     .exec(GenerateToken.checkToken)
     .exec(ActionsCart.checkout)

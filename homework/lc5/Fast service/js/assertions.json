@@ -1,0 +1,10 @@
+{
+  "simulation": "ods.vm.gatling.LoadSimulation_run",
+  "simulationId": "loadsimulation-run",
+  "start": 1555282528113,
+  "description": "",
+  "scenarios": ["Users: HP -> all product (2 times) -> product details (2 times)", "Users: HP -> product details", "Users: HP -> all product -> product details", "Users: HP -> all product -> product details -> add to cart", "Users: HP -> all product (5 times) -> product details (5 times) -> add to cart (5 times) -> view cart -> checkout", "Users: HP -> all product -> view cart", "Users: HP -> all product -> product details -> view cart -> product details", "Users: HP -> all product (2 times) -> product details (2 times) -> add to cart (2 times) -> product details -> checkout"],
+  "assertions": [
+
+  ]
+}
